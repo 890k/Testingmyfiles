@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orange Money Loans - Apply</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Orange Money Loans</h1>
+      <p>Fast and reliable emergency mobile loans</p>
+    </div>
+
+    <form id="loanForm">
+      <div class="form-group">
+        <label for="fullName">Full Legal Name</label>
+        <input type="text" id="fullName" placeholder="e.g. John Doe" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phoneNumber">Orange Mobile Number</label>
+        <input type="tel" id="phoneNumber" placeholder="e.g. +267 71234567" required>
+      </div>
+
+      <div class="form-group">
+        <label for="loanAmount">Select Loan Amount</label>
+        <select id="loanAmount" required>
+          <option value="" disabled selected>Select amount</option>
+          <option value="500">500</option>
+          <option value="1000">1,000</option>
+          <option value="2500">2,500</option>
+          <option value="5000">5,000</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="tenure">Repayment Duration</label>
+        <select id="tenure" required>
+          <option value="30 Days">30 Days</option>
+          <option value="60 Days">60 Days</option>
+          <option value="90 Days">90 Days</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Proceed to Verification</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
